@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+}
+.sidebar {
+    position: absolute;
+    background: linear-gradient(rgba(213, 218, 255, 0.98), rgb(114, 116, 247), rgba(127, 125, 255, 0.98));
+    width:240px;
+    height: 100vh;
+    box-shadow: 2px 2px 20px black;
+    transition: all 0.2s ease;
+    z-index: 1;
+    /* padding-top: 12px; */
+}
+.sidebarGo{
+    transform: translateX(-280px);
+    position: absolute;
+}
+
+.sidebar nav {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 1.7rem;
+    padding: 29px 0px 10px 0px;
+}
+
+.sidebar nav li a{
+    width: 6.8rem;
+}
+
+
+.hamburger{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 1;
+}
+.ham{
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+.cross{
+    cursor: pointer;
+    margin-left: 190px;
+}
+
+.main{
+    height: 99vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+}
+.main::before{
+        content: "";
+        background: url(../images/frontPageBg.png);
+        background-repeat: no-repeat fill;
+        background-position: top center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.26;
+        width: 100%;
+        height: 100%;
+}
+
+.infoContainer{
+    /* border: 2px solid red; */
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.infoContainer h1{
+    font-size: 3rem;
+}
+.accuracyMenu{
+    margin-top: 20px;
+    height: 70vh;
+    width: 70vw;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.center{
+    /* background: linear-gradient(rgb(227, 227, 255), rgb(189, 189, 255), rgb(95, 95, 255)); */
+    z-index: 2;
+    cursor: pointer;
+}
+
+.center img{
+    height: 23vh;
+    width: 12vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    box-shadow: 7px 7px 4px black;
+    
+}
+.center img:active{
+    transform: translateY(2px);
+    box-shadow: 0px 0px;
+}
+.profile{
+    height: 20vh;
+    position:relative;
+    top: -32px;
+    left: -63px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    transition: linear 0.5s;
+}
+.profile:hover img{
+    transform: scale(1.04);
+}
+#codechef_profile{
+    left: 23vw;
+}
+#codeforces_profile{
+    left: 9vw;
+}
+#hackerrank_profile{
+    left: -20vw;
+}
+#hackerrank_profile img{
+    height: 28vh;
+    width: 14vw;
+}
+#leetcode_profile{
+    left: -33vw;
+}
+.circle{
+    height: 20vh;
+    width: 10vw;
+    /* border: 2px solid blue; */
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+.circle:hover{
+    border-radius: 50%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn{
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    border: 3px ridge black;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(210, 245, 255), rgb(203, 244, 254), rgb(155, 240, 255));
+}
+.btn:hover{
+    transform: scale(1.04);
+    background-image: linear-gradient(rgb(201, 252, 255), rgb(113, 255, 255), rgb(110, 243, 255));
+}
+.btn:active{
+    transform: translateY(3px);
+}

@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.light_text{
+    color: rgb(171, 171, 171);
+}
+.underline{
+    text-decoration: underline;
+}
+.btn{
+    width: 9rem;
+    background-color: rgb(52, 44, 44);
+    color: white;
+    font-size: 1rem;
+    border: 2px solid rgb(8, 215, 8);
+    border-radius: 10px;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(42, 35, 35);
+    transform: scale(1.05);
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(252, 112, 112), rgb(255, 90, 115), rgb(252, 98, 214));
+}
+.logo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 0.4rem solid black;
+}
+.logo img{
+    margin: 4px;
+    /* border: 3px solid rgba(18, 17, 17, 0.627); */
+    box-shadow: 2px 2px 2px black,
+                -2px -2px 2px black;
+    width: 3vw;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    height: 70vh;
+    width: 60vw;
+    box-shadow: -2px 2px 10px rgb(31, 30, 30), 9px 0px 10px rgb(93, 92, 92);
+    background: linear-gradient(90deg, rgb(253, 144, 144), rgb(255, 127, 146), rgb(175, 110, 255));
+}
+.login_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(52, 44, 44);
+    height: 65vh;
+    width: 30vw;
+}
+.login_container h1{
+    color: white;
+    margin: 5rem 0rem 0rem 0.8rem;
+}
+.login_container #login_text{
+    margin: 0.5rem 0rem 1.3rem 0rem;
+}
+.login_container input{
+    width: 15rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.3rem;
+    margin: 0.5rem 0rem;
+    border: 2px solid rgb(49, 49, 255);
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(52, 44, 44);
+}
+.login_container input:hover{
+    transform: scale(1.03);
+}
+.login_container #forgot_password{
+    cursor: pointer;
+    margin: 1.3rem 0rem;
+}
