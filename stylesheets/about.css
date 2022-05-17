@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .container{
+    display: flex;
+} */
+.sidebar {
+    font-family: 'Dosis', sans-serif;
+    position: absolute;
+    background: linear-gradient(rgba(213, 218, 255, 0.98), rgb(114, 116, 247), rgba(127, 125, 255, 0.98));
+    width:240px;
+    height: 100vh;
+    box-shadow: 2px 2px 20px black;
+    transition: all 0.2s ease;
+    z-index: 1;
+    /* padding-top: 12px; */
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0px   ;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.btn{
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    border: 3px ridge black;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(210, 245, 255), rgb(203, 244, 254), rgb(155, 240, 255));
+}
+.btn:hover{
+    transform: scale(1.04);
+    background-image: linear-gradient(rgb(201, 252, 255), rgb(113, 255, 255), rgb(110, 243, 255));
+}
+.btn:active{
+    transform: translateY(3px);
+}
+
+.sidebarGo{
+    transform: translateX(-280px);
+    position: absolute;
+}
+.hamburger{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 1;
+}
+.ham{
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+.cross{
+    cursor: pointer;
+    margin-left: 190px;
+}
+.sidebar nav {
+    padding: 45px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+/* .main{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas:
+    'aboutUS aboutUS aboutUS'
+    'authors authors authors';
+} */
+.authors{
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas: 
+    'heading heading heading'
+    'author1 author2 author3';
+    height: 24rem;
+    grid-template-rows: 5rem 17rem;
+    grid-template-columns: 33% 33% 33%;
+}
+.heading{
+    grid-area: heading;
+}
+.heading h1{
+    text-align: center;
+}
+
+
+.aboutUs{
+    /* background-color: pink; */
+    grid-area: aboutUS;
+    margin: 0px 62px 9px 62px;
+    padding: 17px;
+    padding-top: 40px;
+    height: 10rem;
+}
+.authors{
+    /* background-color: yellow; */
+    grid-area: authors;
+    margin: 7px 56px 56px 56px;
+    padding: 27px;
+}
+.author1{
+    /* background-color: green; */
+    grid-area: author1;
+    
+}
+.author2{
+    /* background-color: rgb(32, 92, 32); */
+    grid-area: author2;
+}
+.author3{
+    /* background-color: rgb(33, 209, 33); */
+    grid-area: author3;
+}
+.aboutUs h1{
+    text-align: center;
+    padding: 34px;
+}
+.aboutUS p{
+    margin: 12px 2px 0px 2px;
+    padding: 9px 0px 0px 0px;
+}
+.author1 h3{
+    text-align: center; 
+}
+.author2 h3{
+    text-align: center; 
+}
+.author3 h3{
+    text-align: center; 
+}
+.main::before{
+    content: "";
+    background: url(../images/About-Us.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.26;
+    width: 100%;
+    height: 100%;
+}
+.authors h1{
+    text-align: center;
+    /* padding: 10px 10px 10px 10px;
+    margin: 38px 10px 10px 10px; */
+}
+
