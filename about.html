@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./stylesheets/about.css">
     <title>Your Progress</title>
 </head>
@@ -17,7 +18,7 @@
                     <li><a href="./index.html" class="btn">Home</a></li>
                     <li><a href="./rating.html" class="btn">Contest Ratings</a></li>
                     <li><a href="./solved.html" class="btn">Solved Problems</a></li>
-                    <li><a href="./submission.html" class="btn">Total Submissions</a></li>
+                    <li><a href="./totalSubmissions.html" class="btn">Total Submissions</a></li>
                     <li><a href="./about.html" class="btn">About AL-TOG</a></li>
                 </ul>
             </nav>
@@ -30,24 +31,53 @@
             </div>
             <div class="aboutUs">
                 <h1>About AL-TOG</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, ut in! Ullam ea, dolorum repellat
-                    neque minus libero omnis illo quo assumenda quisquam amet possimus placeat? Explicabo deleniti ipsa
-                    obcaecati facere ad expedita ab. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                    exercitationem obcaecati id voluptas vel tenetur ex, nemo quis culpa numquam ratione accusantium
-                    consectetur, odit dolores sunt libero quia. Minima pariatur sint earum in est eum optio. Dolor
-                    aliquid officia non, sapiente velit ea, provident accusamus ab aliquam, obcaecati eveniet illo.</p>
+                <p>A learning platform for all the competitive programmers by helping them analyze their progress and
+                    learn collaboratively by managing their friends.<strong>A tool to analyse and improve your
+                        Competitive Programming Progress.</strong>The goal is to
+                    keep people motivated in algorithmic programming and solve more and more problems.
+                    <strong>Find a friend who is similar to you and just compete among each other.</strong>
+                    This will make environment competitive and you'll definitely give your best. It will make things
+                    interesting. You will also upsolve when you got a nice company (/competitor). It's not like you are
+                    enemies, you will teach each other something.
+                </p>
             </div>
             <div class="authors">
                 <div class="heading">
                     <h1>AUTHORS</h1>
                 </div>
-                
+
                 <div class="author1">
                     <h3>Amitannsh Johri</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore incidunt praesentium dolores
                         fugit omnis magni, nesciunt, quod officiis mollitia modi architecto tempora porro debitis autem
                         quam iusto repellendus quas molestias voluptas odit ea magnam velit eveniet. Veritatis officiis
                         error ipsam.</p>
+                        <div class="menu" onclick="pop()" >
+                            <i class="fa-solid fa-share-nodes" id="share"></i>
+                        </div>
+                        <div class="menu-items">
+                            <div class="item1" id="item1">
+                                <center>
+                                    <a href="#">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </center>
+                        </div>
+                            <div class="item2" id="item2">
+                                <center>
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </center>
+                        </div>
+                            <div class="item3" id="item3">
+                                <center>
+                                    <a href="#">
+                                        <i class="fa-solid fa-download"></i>
+                                    </a>
+                                </center>
+                        </div>
+                        </div>
                 </div>
                 <div class="author2">
                     <h3>Mrityuanjaya Gupta</h3>
@@ -55,6 +85,32 @@
                         fugit omnis magni, nesciunt, quod officiis mollitia modi architecto tempora porro debitis autem
                         quam iusto repellendus quas molestias voluptas odit ea magnam velit eveniet. Veritatis officiis
                         error ipsam.</p>
+                        <div class="menu" onclick="pop1()" >
+                            <i class="fa-solid fa-share-nodes" id="share"></i>
+                        </div>
+                        <div class="menu-items">
+                            <div class="item1" id="item11">
+                                <center>
+                                    <a href="#">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </center>
+                        </div>
+                            <div class="item2" id="item21">
+                                <center>
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </center>
+                        </div>
+                            <div class="item3" id="item31">
+                                <center>
+                                    <a href="#">
+                                        <i class="fa-solid fa-download"></i>
+                                    </a>
+                                </center>
+                        </div>
+                        </div>
                 </div>
                 <div class="author3">
                     <h3>Nancy Yadav</h3>
@@ -62,12 +118,38 @@
                         fugit omnis magni, nesciunt, quod officiis mollitia modi architecto tempora porro debitis autem
                         quam iusto repellendus quas molestias voluptas odit ea magnam velit eveniet. Veritatis officiis
                         error ipsam.</p>
+                        <div class="menu" onclick="pop2()" >
+                            <i class="fa-solid fa-share-nodes" id="share"></i>
+                        </div>
+                        <div class="menu-items">
+                            <div class="item1" id="item12">
+                                <center>
+                                    <a href="#">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </center>
+                        </div>
+                            <div class="item2" id="item22">
+                                <center>
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </center>
+                        </div>
+                            <div class="item3" id="item32">
+                                <center>
+                                    <a href="#">
+                                        <i class="fa-solid fa-download"></i>
+                                    </a>
+                                </center>
+                        </div>
+                        </div>
                 </div>
             </div>
 
         </div>
     </div>
-    <script src="./scripts/frontPage.js"></script>
+    <script src="./scripts/about.js"></script>
 </body>
 
 </html>
