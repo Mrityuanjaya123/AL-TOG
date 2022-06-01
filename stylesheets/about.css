@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap'); */
 *{
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     padding: 1rem 2rem;
     border-radius: 0.8rem;
     border: 3px ridge black;
@@ -198,27 +198,28 @@
     text-align:center;
 }
 .author1:hover{
-    transform: scale(1.07);
+    transform: scale(1.03);
     background-color: #f8f9d2;
     background-image: linear-gradient(315deg, #e8dbfc 0%, #f8f9d2 74%);
     opacity: 100;
     z-index: 1;
 }
 .author2:hover{
-    transform: scale(1.07);
+    transform: scale(1.03);
     background-color: #f8f9d2;
     background-image: linear-gradient(315deg, #e8dbfc 0%, #f8f9d2 74%);
     opacity: 100;
     z-index: 1;
 }
 .author3:hover{
-    transform: scale(1.07);
+    transform: scale(1.03);
     background-color: #f8f9d2;
     background-image: linear-gradient(315deg, #e8dbfc 0%, #f8f9d2 74%);
     opacity: 100;
     z-index: 1;
 }
 .menu{
+    cursor: pointer;
     height: 40px;
     width: 40px;
     background-color: tomato;

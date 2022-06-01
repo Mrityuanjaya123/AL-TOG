@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/rating.css">
+    <title>Your Progress</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <li><a href="./index.html" class="btn">Home</a></li>
+                    <li><a href="./frontPage.html" class="btn">Dashboard</a></li>
+                    <li><a href="./rating.html" class="btn">Contest Ratings</a></li>
+                    <!-- <li><a href="./totalSubmissions.html" class="btn">Total Submissions</a></li> -->
+                    <li><a href="./about.html" class="btn">About AL-TOG</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="main">
+            <div class="hamburger">
+                <img src="./images/ham.png" class = 'ham' alt="hamburgerIcon" width="33" height="23">
+                <img src="./images/cross.png" class = 'cross' alt="crossIcon" width="24">
+            </div>
+            <div class="infoContainer">
+                <div class="profile" id="CF">
+                    <div class="logo">
+                        <img src="./images/codeforces_logo.png" alt="codeforces_logo" srcset="">
+                    </div>
+                    <div class="boxes">
+                        <div class="box">
+                            <p id="CFrating">Rating: 0</p>
+                        </div>
+                        <div class="box">
+                            <p id="CFmaxrating">Max Rating: 0</p>
+                        </div>
+                        <div class="box">
+                            <p id="CFrank">Rank: -</p>
+                        </div>
+                        <div class="box">
+                            <p id="CFmaxrank">Max Rank: -</p>
+                        </div>
+                        <div class="box">
+                            <p id="CFcontribution">Contribution: 0</p>
+                        </div>
+                        <div class="box">
+                            <p id="CFfriends">Friends: 0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile" id="LC">
+                    <div class="logo">
+                        <img src="./images/leetcode_logo.png" alt="leetcode_logo" srcset="">
+                    </div>
+                    <div class="boxes">
+                        <div class="box">
+                            <p id="LCtotalsolved">Total Solved: 0</p>
+                        </div>
+                        <div class="box">
+                            <p id="LCeasy">Easy: 0</p>
+                        </div>
+                        <div class="box">
+                            <p id="LCmedium">Medium: 0</p>
+                        </div>
+                        <div class="box">
+                            <p id="LChard">Hard: 0</p>
+                        </div>
+                        <div class="box">
+                            <p id="LCacceptancerate">Acceptance Rate: 0</p>
+                        </div>
+                        <div class="box">
+                            <p id="LCranking">Ranking: 0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile" id="SP">
+                    <div class="logo">
+                        <img src="./images/spoj_logo.jpeg" alt="spoj_logo" srcset="">
+                    </div>
+                    <div class="boxes">
+                        <div class="box">
+                            <p id="SPrank">World Rank: 0</p>
+                        </div>
+                        <div class="box">
+                            <p id="SPtotalsolved">Problems Solved: 0</p>
+                        </div>
+                        <div class="box">
+                            <p id="SPsolutionssubmitted">Solutions submitted: -</p>
+                        </div>
+                        <div class="box">
+                            <p id="SPjoined">Joined: -</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile" id="AC">
+                    <div class="logo">
+                        <img src="./images/atcoder_logo.png" alt="codeforces_logo" srcset="">
+                    </div>
+                    <div class="boxes">
+                        <div class="box">
+                            <p id="ACrank">Rank: 0</p>
+                        </div>
+                        <div class="box">
+                            <p id="ACrating">Rating: 0</p>
+                        </div>
+                        <div class="box">
+                            <p id="AChighestrating">Highest Rating: -</p>
+                        </div>
+                        <div class="box">
+                            <p id="ACratedmatches">Rated Matches: -</p>
+                        </div>
+                        <div class="box">
+                            <p id="AClastcompeted">Last Competed: -</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/rating.js"></script>
+</body>
+
+</html>
