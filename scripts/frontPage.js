@@ -2,6 +2,7 @@ var cross = document.querySelector('.cross');
 var ham = document.querySelector('.ham');
 var sidebar = document.querySelector('.sidebar');
 cross.style.display = 'none';
+document.querySelector('.infoContainer h1').innerHTML = localStorage.getItem("username");
 ham.addEventListener("click", () => {
     sidebar.classList.remove('sidebarGo');
     setTimeout(() => {
@@ -21,20 +22,24 @@ function pop()
 {
     if(flag == true)
     {
-        document.getElementById('codechef_profile').style.transform = 'translate(170px, 30px)';
-        document.getElementById('codeforces_profile').style.transform = 'translate(90px, -130px)';
-        document.getElementById('hackerearth_profile').style.transform = 'translate(-120px, -110px)';
-        document.getElementById('hackerrank_profile').style.transform = 'translate(-150px, 70px)';
-        document.getElementById('leetcode_profile').style.transform = 'translate(27px, 145px)';
+        document.getElementById('codeforces_profile').style.transform = 'translate(0px, -185px)';
+        document.getElementById('leetcode_profile').style.transform = 'translate(0px, 185px)';
+        document.getElementById('spoj_profile').style.transform = 'translate(185px, 0px)';
+        document.getElementById('atcoder_profile').style.transform = 'translate(-185px, 0px)';
         flag = false;
     }
     else
     {
-        document.getElementById('codechef_profile').style.transform = 'translate(0px, 0px)';
         document.getElementById('codeforces_profile').style.transform = 'translate(0px, 0px)';
-        document.getElementById('hackerearth_profile').style.transform = 'translate(0px, 0px)';
-        document.getElementById('hackerrank_profile').style.transform = 'translate(0px, 0px)';
         document.getElementById('leetcode_profile').style.transform = 'translate(0px, 0px)';
+        document.getElementById('spoj_profile').style.transform = 'translate(0px, 0px)';
+        document.getElementById('atcoder_profile').style.transform = 'translate(0px, 0px)';
         flag = true;
     }
 }
+anchorTags = document.querySelectorAll('.profile a');
+anchorTags[0].href = `https://codeforces.com/profile/${localStorage.getItem('CFusername')}`;
+anchorTags[1].href = `https://leetcode.com/${localStorage.getItem('LCusername')}/`;
+anchorTags[2].href = `https://www.spoj.com/users/${localStorage.getItem('SPusername')}/`;
+anchorTags[3].href = `https://atcoder.jp/users/${localStorage.getItem('ACusername')}`;
+console.log(anchorTags);
