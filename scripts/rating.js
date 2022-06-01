@@ -40,7 +40,7 @@ fetch(`https://leetcode-stats-api.herokuapp.com/${localStorage.getItem('LCuserna
     // document.getElementById('rating').innerHTML = (ratingnum[0].rating);
 });
 
-fetch(`http://all-cp-platforms-api.herokuapp.com/api/spoj/${localStorage.getItem('SPusername')}`)
+fetch(`https://all-cp-platforms-api.herokuapp.com/api/spoj/${localStorage.getItem('SPusername')}`)
 .then(rating => rating.json())
 .then(ratingdata => {
     document.querySelector('#SPrank').innerHTML = `World Rank: ${ratingdata.world_rank}`;
@@ -49,7 +49,7 @@ fetch(`http://all-cp-platforms-api.herokuapp.com/api/spoj/${localStorage.getItem
     document.querySelector('#SPjoined').innerHTML = `Joined: ${ratingdata.joined}`;
 });
 
-fetch(`http://all-cp-platforms-api.herokuapp.com/api/atcoder/${localStorage.getItem('ACusername')}`)
+fetch(`https://all-cp-platforms-api.herokuapp.com/api/atcoder/${localStorage.getItem('ACusername')}`)
 .then(rating => rating.json())
 .then(ratingdata => {
     // console.log(ratingdata.Rank);
